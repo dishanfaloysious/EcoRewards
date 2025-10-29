@@ -1,0 +1,64 @@
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: "Poppins", sans-serif; }
+
+body {
+  background: #000; color: #b5e0a0;
+  display: flex; flex-direction: column; min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: #5fa861; color: #000;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem; font-weight: 600; font-size: 1.2rem;
+}
+.leaf { margin-left: 4px; }
+.icon { font-size: 1.3rem; cursor: pointer; }
+
+/* Main */
+.content { flex: 1; text-align: center; padding: 2rem 1.5rem; }
+
+/* Loading Screen */
+.loading-screen {
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  gap: 2.5rem; margin-top: 4rem;
+}
+
+/* Main Logo */
+.logo {
+  width: 500px; height: auto; margin-bottom: 1rem;
+  animation: pulse-sync 2.5s ease-in-out infinite;
+}
+
+/* Loading Section (icon + text above slogan) */
+.loading-section {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0.2rem; margin-top: 0.3rem;
+  animation: pulse-sync 2.5s ease-in-out infinite;
+}
+
+/* Recycling Icon */
+.recycle { font-size: 5rem; color: #5fa861; }
+
+/* Loading Text */
+.loading-text { color: #b5e0a0; font-size: 2rem; font-weight: 600; }
+
+/* Tagline */
+.loading-text-main {
+  font-weight: 700; font-size: 2rem; margin-top: 1.5rem;
+  background: linear-gradient(90deg, #6ecf6f, #9af0a4, #6ecf6f);
+  background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  animation: shimmer 3s ease-in-out infinite; letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes shimmer {
+  0% { background-position: 0% 50%; opacity: 0.8; }
+  50% { background-position: 100% 50%; opacity: 1; }
+  100% { background-position: 0% 50%; opacity: 0.8; }
+}
+
+@keyframes pulse-sync {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
