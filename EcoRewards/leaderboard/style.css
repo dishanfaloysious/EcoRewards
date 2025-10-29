@@ -1,0 +1,33 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: "Poppins", sans-serif; }
+
+body { background: #000; color: #b5e0a0; display: flex; flex-direction: column; min-height: 100vh; }
+
+/* Header */
+.header { background: #5fa861; color: #000; display: flex; justify-content: space-between; align-items: center; padding: 1rem; font-weight: 600; font-size: 1.2rem; }
+.leaf { margin-left: 4px; }
+.icon { font-size: 1.3rem; cursor: pointer; }
+
+/* Content */
+.content { flex: 1; padding: 1.5rem; padding-bottom: 6rem; display: flex; flex-direction: column; gap: 2rem; }
+
+/* Stats */
+.stats { display: flex; justify-content: space-between; }
+.card { text-align: center; flex: 1; }
+.card p { font-size: 0.9rem; margin-bottom: 0.5rem; }
+.circle { border: 2px solid #5fa861; border-radius: 50%; width: 100px; height: 100px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.big { font-size: 1.8rem; font-weight: 700; }
+.label { font-size: 0.8rem; color: #8fb88a; }
+
+/* Leaderboard */
+.leaderboard { display: flex; justify-content: center; align-items: center; }
+.frame { background: #5fa861; padding: 1rem; border-radius: 10px; width: 100%; max-width: 350px; margin: 0 auto; }
+.frame ul { list-style: none; padding: 1rem; background: #000; border-radius: 8px; margin: 0; }
+.frame li { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 0.8rem; margin-bottom: 0.5rem; background: #0a0a0a; border-radius: 6px; color: #d4e6c7; font-weight: 500; }
+.rank { width: 25px; height: 25px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 0.9rem; margin-right: 0.8rem; color: #000; font-weight: 700; }
+.gold { background: #ffd700; } .silver { background: #c0c0c0; } .bronze { background: #cd7f32; }
+.score { background: #1a1a1a; padding: 0.3rem 0.7rem; border-radius: 15px; font-size: 0.9rem; color: #a8d09c; }
+
+/* Footer */
+.footer { background: #111; border-top: 2px solid #5fa861; display: flex; justify-content: space-around; align-items: center; padding: 0.8rem 0; position: fixed; bottom: 0; width: 100%; }
+.nav-item { color: #8fb88a; text-align: center; font-size: 0.9rem; }
+.nav-item.active { color: #5fa861; font-weight: 600; }

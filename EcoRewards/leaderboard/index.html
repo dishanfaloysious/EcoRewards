@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoRewards Leaderboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="header">
+    <div class="title">EcoRewards <span class="leaf">🍃</span></div>
+    <div class="icon">👤</div>
+</header>
+
+<main class="content">
+    <section class="stats">
+        <div class="card">
+            <p>You have completed</p>
+            <div class="circle">
+                <span class="big" id="taskCount">15</span>
+                <span class="label">Tasks</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <p>Emissions saved</p>
+            <div class="circle">
+                <span class="big" id="emissionValue">18kg</span>
+                <span class="label">CO₂e</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="leaderboard">
+        <div class="frame">
+            <ul id="leaderboardList">
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="nav-item">⭐<br><span>Rewards</span></div>
+    <div class="nav-item">🏠<br><span>Home</span></div>
+    <div class="nav-item active">📊<br><span>Leaderboard</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
