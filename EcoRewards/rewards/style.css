@@ -1,0 +1,140 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: "Poppins", sans-serif; }
+
+/* Header */
+.header {
+  background: #5fa861; color: #000;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem; font-weight: 600; font-size: 1.2rem;
+}
+.leaf { margin-left: 4px; }
+.icon { font-size: 1.3rem; cursor: pointer; }
+
+body {
+  background: #000;
+  color: #b5e0a0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+
+/*balance*/
+.balanceSection {
+  margin: 1rem 0 3rem;
+}
+
+.balanceLabel {
+  color: #8fe68b;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.balanceCircle {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(circle at top, #5fa861, #388b43);
+  box-shadow: 0 0 15px #57c764;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.balanceNumber {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.balanceText {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/*shop*/
+.shopSection {
+  margin-top: 2rem;
+}
+
+.shopTitle {
+  color: #6ecf6f;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.shopGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+/*rewards*/
+.rewardsContent {
+  flex: 1;
+  text-align: center;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.rewardCard {
+  background: #000;
+  border: 2px solid #5fa861;
+  border-radius: 12px;
+  width: 150px;
+  height: 120px;
+  box-shadow: 0 0 10px rgba(95,168,97,0.4);
+  color: #b5e0a0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.rewardCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 18px rgba(95,168,97,0.8);
+}
+
+.rewardTitle {
+  color: #6ecf6f;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.rewardSub {
+  font-size: 0.9rem;
+  color: #a8d09c;
+}
+
+.rewardBadge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #5fa861;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.75rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  background: #111; border-top: 2px solid #5fa861;
+  display: flex; justify-content: space-around; align-items: center;
+  padding: .8rem 0; position: fixed; bottom: 0; width: 100%;
+}
+.nav-item { color: #8fb88a; text-align: center; font-size: .9rem; }
+.nav-item.active { color: #5fa861; font-weight: 600; }

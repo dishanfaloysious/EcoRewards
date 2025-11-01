@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>
-
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRewards — Rewards</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="title">EcoRewards <span class="leaf">🍃</span></div>
+    <div class="icon">👤</div>
+</header>
+
+<main class="rewardsContent">
+    <!--balance-->
+    <div class="balanceSection">
+        <p class="balanceLabel">Balance</p>
+        <div class="balanceCircle">
+            <span class="balanceNumber" id="pointsValue">--</span>
+            <span class="balanceText">Points</span>
+        </div>
+    </div>
+
+    <!--shop-->
+    <section class="shopSection">
+        <h3 class="shopTitle">Shop</h3>
+        <div class="shopGrid" id="rewardsGrid">
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="nav-item active">⭐<br><span>Rewards</span></div>
+    <div class="nav-item">🏠<br><span>Home</span></div>
+    <div class="nav-item">📊<br><span>Leaderboard</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
