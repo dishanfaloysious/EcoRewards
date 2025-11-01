@@ -23,3 +23,17 @@ window.addEventListener("click", (e) => {
     modal.style.display = "none";
   }
 });
+
+// Example demo user data
+const demoUser = {
+  username: "greenuser21",
+  email: "green@gmail.com",
+  joinedYears: 4
+};
+
+// When the page loads fill in the example data
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("username").textContent = demoUser.username;
+  document.getElementById("email").textContent = demoUser.email;
+  document.getElementById("joinedYears").textContent = demoUser.joinedYears;
+});

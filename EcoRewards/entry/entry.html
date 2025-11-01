@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Entry Page</title>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "entry.css">
+</head>
+
+<body>
+
+    <!--Status Bar-->
+    <div class = "status-bar"></div>
+
+
+    <!--Header containing the apps name, logo and profile icon -->
+    <header class = "header">
+        <div class = "title">EcoRewards</div>
+        <div class = "icon"> <img src="Images/EcoRewardsLogo.png" class = "logo" alt = "EcoRewards Logo"></div>
+        <div class = "icon2"> <img src="Images/ProfilePhoto.png" class = "ProfilePicture" alt ="Profile Picture"></div>
+    </header>
+
+    <!--Main content of the page, motto and nav buttons-->
+    <main>
+        <div class = "motto">Your journey starts here
+            <br>Take the first step
+        </div>
+
+     <!--Buttons used for navigating to the Sign in / Register Pages-->
+         <nav class = "buttons">
+             <button onclick = "goToSignin()">Sign in</button>
+             <button onclick = "goToRegister()">Register</button>
+        </nav>
+    </main>
+
+    <!--JS for navigation-->
+    <script src = "entry.js"></script>
+
+</body>
+</html>
