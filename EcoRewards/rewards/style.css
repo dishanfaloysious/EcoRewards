@@ -78,7 +78,7 @@ body {
 .rewardsContent {
   flex: 1;
   text-align: center;
-  padding: 2rem 1.5rem 4rem;
+  padding: 2rem 1.5rem 6rem;
 }
 
 .rewardCard {
@@ -98,10 +98,18 @@ body {
   transition: 0.2s ease;
 }
 
+.rewardCard:active {
+  transform: scale(0.96);
+  box-shadow: 0 0 25px #5fa861;
+}
+
+
 .rewardCard:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0 18px rgba(95,168,97,0.8);
+  box-shadow: 0 0 20px #5fa861;
+  border-color: #6fd472;
 }
+
 
 .rewardTitle {
   color: #6ecf6f;
@@ -129,6 +137,107 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.rewardBtn {
+  margin-top: 0.8rem;
+  background: #5fa861;
+  color: #000;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.rewardBtn:hover {
+  background: #6fd472;
+}
+
+/*redeem page css*/
+.rewardDetails {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem 6rem;
+  text-align: center;
+}
+
+.rewardBox {
+  background: #000;
+  border: 2px solid #5fa861;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(95,168,97,0.4);
+  padding: 2rem;
+  width: 90%;
+  max-width: 350px;
+  color: #b5e0a0;
+  position: relative;
+}
+
+.rewardBadge.large {
+  background: #5fa861;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.rewardTitleLarge {
+  color: #6ecf6f;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.rewardSubLarge {
+  color: #a8d09c;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.codeSection {
+  margin-top: 1rem;
+}
+
+.generateBtn {
+  background: #5fa861;
+  color: #000;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.generateBtn:hover {
+  background: #6fd472;
+}
+
+.codeDisplay {
+  margin-top: 1rem;
+  background: #111;
+  border: 1px solid #5fa861;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #6ecf6f;
+}
+
 
 /* Footer */
 .footer {
