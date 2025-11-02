@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Register Page</title>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--links to css file for styling-->
+    <link rel = "stylesheet" href = "register.css">
+</head>
+
+<body>
+
+    <!--Status Bar-->
+    <div class = "status-bar"></div>
+
+
+    <!--Header containing the apps name, logo and profile icon -->
+    <header class = "header">
+        <div class = "title">EcoRewards</div>
+        <div class = "icon"> <img src="Images/EcoRewardsLogo.png" class = "logo" alt = "EcoRewards Logo"></div>
+        <div class = "icon2"> <img src="Images/ProfilePhoto.png" class = "ProfilePicture" alt ="Profile Picture"></div>
+    </header>
+
+    <!--main content of page-->
+    <main>
+
+        <!--Return button-->
+        <div id="backButton" class="backBtn">
+            <img src = "Images/returnButton.png" alt="return button" class="backIcon">
+        </div>
+
+        <!--Register form for users to sign up-->
+        <form id = "registerForm">
+            <!--Lets users enter their full name-->
+            <div class = "input-group">
+                <label for = "name">Full Name</label>
+                <input type = "name" id = "name" placeholder="Enter Full Name" required>
+            </div>
+
+            <!--Lets user input their email-->
+            <div class = "input-group">
+                <label for = "email">Email</label>
+                <input type = "email" id = "email" placeholder="Enter Email" required>
+            </div>
+
+            <!--Lets user input their password-->
+            <div class = "input-group">
+                <label for = "password">Password</label>
+                <input type = "password" id = "password" placeholder="Enter Password" required>
+            </div>
+
+            <!--Submit button-->
+            <button type= "submit">Sign Up</button>
+        </form>
+
+
+</main>
+
+    <!--JS file for navigation and submitting details-->
+    <script src = "register.js"></script>
+
+</body>
+</html>

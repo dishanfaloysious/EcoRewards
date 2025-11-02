@@ -1,0 +1,154 @@
+/*sets the background to black */
+body {
+    background-color: black;
+}
+
+/*centers content and adds margin*/
+main{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*status bar at the top, with a green colour */
+.status-bar {
+    background-color: #5fa860;
+     width: 100%;
+     height: 40px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+
+}
+
+/*text centered and spaced */
+.header {
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+/*title styling */
+.title {
+     color: #5fa860;
+     font-size: 26px;
+     font-weight: bold;
+     margin-top: 30px;
+}
+
+/*centres the logo */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/*profile center just down from logo */
+.icon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/*positions the back button*/
+.backBtn {
+    position: absolute;
+    top: 45px;
+    left: 15px;
+}
+
+/*apps motto styled*/
+.motto {
+    color: #5fa860;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+
+
+}
+
+/*logo sizing */
+.logo {
+    width: 100px;
+    height: auto;
+
+}
+
+/*profile picture sizing/spaced */
+.ProfilePicture{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-top: 0px;
+}
+
+/*container for apps buttons, and their layout*/
+.buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/*Styles login form*/
+form#registerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 80%
+    max-width: 350px;
+}
+
+/*Styles placeholder texts colour*/
+form#registerForm input::placeholder{
+    color: #c0c0c0;
+}
+
+/*Groups the labels*/
+.input-group{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 12px;
+}
+
+/*Styles the label inside each group*/
+.input-group label{
+    color: #5fa860;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*Styles user input*/
+.input-group input {
+     padding: 12px 20px;
+     font-size: 18px;
+     font-weight: bold;
+     border: none;
+     border-radius: 30px;
+}
+
+/*button styling */
+button {
+    margin-top: 20px;
+    width: 60%;
+    height: 50%;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    text-align: center;
+}
+
+/*hover effect */
+button:hover {
+    background-color: #f0f0f0;
+}
