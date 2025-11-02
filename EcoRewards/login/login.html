@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Login Page</title>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--links to css file for styling-->
+    <link rel = "stylesheet" href = "login.css">
+</head>
+
+<body>
+
+    <!--Status Bar-->
+    <div class = "status-bar"></div>
+
+
+    <!--Header containing the apps name, logo and profile icon -->
+    <header class = "header">
+        <div class = "title">EcoRewards</div>
+        <div class = "icon"> <img src="Images/EcoRewardsLogo.png" class = "logo" alt = "EcoRewards Logo"></div>
+        <div class = "icon2"> <img src="Images/ProfilePhoto.png" class = "ProfilePicture" alt ="Profile Picture"></div>
+    </header>
+
+    <!--main content of page-->
+    <main>
+        <!--Return button-->
+        <div id="backButton" class="backBtn">
+            <img src = "Images/returnButton.png" alt="return button" class="backIcon">
+        </div>
+
+        <!--login form for user input-->
+        <form id = "loginForm">
+            <!--Email input-->
+            <div class = "input-group">
+                <label for = "email">Email</label>
+             <input type = "email" id = "email" placeholder="Enter Email" required>
+            </div>
+
+            <!--Password input-->
+            <div class = "input-group">
+                <label for = "password">Password</label>
+                <input type = "password" id = "password" placeholder="Enter Password" required>
+            </div>
+
+            <!--Submit button-->
+            <button type= "submit">Sign In</button>
+        </form>
+
+
+    </main>
+
+    <!--JS file for navigation and submitting details-->
+    <script src = "login.js"></script>
+
+</body>
+</html>
