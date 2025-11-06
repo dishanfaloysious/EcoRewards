@@ -1,0 +1,86 @@
+/* Base */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: "Poppins", sans-serif; }
+body { background: #000; color: #b5e0a0; min-height: 100vh; display: flex; flex-direction: column; }
+
+/* --- Green status bar --- */
+.statusbar{
+  background:#5fa861; color:#000;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:.35rem .75rem;
+  font-size:.9rem; font-weight:600;
+  border-bottom:1px solid #4f9452;
+}
+
+/* --- Brand row  --- */
+.brandbar{
+  background:#000; color:#5fa861;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:.9rem 1rem;
+  border-bottom:1px solid #1f3e21;
+}
+
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.logo-img {
+  height: 24px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.logo-text {
+  color: #5fa861;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-left: 6px;
+}
+.leaf{ margin-left:2px; }
+.profile-btn{ color:#5fa861; text-decoration:none; font-size:1.25rem; }
+
+/* --- Main content --- */
+.content{
+  flex:1;
+  padding:1rem 1rem 6rem;
+  display:grid;
+  place-items:center;
+}
+.content-inner{
+  width:100%;
+  max-width:800px;
+}
+.section-title{
+  color:#72b874; font-weight:700; font-size:1.1rem;
+  text-align:center; margin:1rem 0 1.25rem;
+}
+
+.challenge-list{ list-style:none; display:flex; flex-direction:column; gap:1.1rem; }
+.challenge{ border-top:1px solid #1f3e21; padding-top:.9rem; }
+.challenge-title{ font-weight:600; margin-bottom:.35rem; color:#b5e0a0; }
+.challenge-sub{ font-size:.85rem; color:#8fb88a; }
+
+.btn-accept{
+  background:#0a0a0a; color:#a8d09c; border:1px solid #274d2a;
+  padding:.4rem .9rem; border-radius:999px; font-size:.85rem;
+  cursor:pointer; float:right;
+}
+.btn-accept:hover{ border-color:#5fa861; color:#c9f5ba; }
+.btn-accept[disabled]{ opacity:.55; cursor:not-allowed; }
+
+/* --- Footer --- */
+.footer{
+  background:#111; border-top:2px solid #5fa861;
+  position:fixed; left:0; right:0; bottom:0;
+  display:flex; justify-content:space-around; align-items:center;
+  padding:.55rem 0;
+}
+.nav-item{ color:#8fb88a; text-decoration:none; text-align:center; width:33.33%; }
+.nav-ico{ font-size:1.1rem; line-height:1.1rem; }
+.nav-txt{ font-size:.85rem; margin-top:.15rem; }
+.nav-item.active{ color:#5fa861; font-weight:600; }
+
+/* Utility */
+.visually-hidden{ position:absolute; left:-9999px; }

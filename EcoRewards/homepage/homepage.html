@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>EcoRewards – Main Menu</title>
+    <link rel="stylesheet" href="homepage.css?v=5"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+<!-- Status bar  -->
+<div class="statusbar">
+    <span class="sb-time">11:00pm</span>
+    <span class="sb-signal">📶</span>
+</div>
+
+<!-- Brand row  -->
+<header class="brandbar">
+    <div class="brand">
+        <span class="logo-text">EcoRewards</span>
+        <img src="logo.png" alt="EcoRewards Logo" class="logo-img">
+    </div>
+    <a class="profile-btn" href="../Profile/profile.html" title="Profile">👤</a>
+</header>
+
+<!-- Main content  -->
+<main class="content">
+    <div class="content-inner">
+        <h1 class="section-title">Today's Challenges</h1>
+        <ul id="challengeList" class="challenge-list"></ul>
+    </div>
+</main>
+
+<!-- Bottom navigation -->
+<footer class="footer">
+    <a class="nav-item" href="../rewards/rewards.html">
+        <div class="nav-ico">⭐</div>
+        <div class="nav-txt">Rewards</div>
+    </a>
+    <a class="nav-item active" href="../MainMenu/homepage.html">
+        <div class="nav-ico">🏠</div>
+        <div class="nav-txt">Home</div>
+    </a>
+    <a class="nav-item" href="../Leaderboard/leaderboard.html">
+        <div class="nav-ico">📊</div>
+        <div class="nav-txt">Leaderboard</div>
+    </a>
+</footer>
+
+<span id="headerPoints" class="visually-hidden">Points: 0</span>
+<script src="homepage.js"></script>
+</body>
+</html>
