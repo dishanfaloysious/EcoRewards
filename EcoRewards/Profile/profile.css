@@ -57,6 +57,24 @@ body {
   cursor: pointer; width: 80%; max-width: 300px;
   transition: .2s;
 }
+.email-button {
+  background: #5fa861;
+  color: #000;
+  border: none;
+  padding: .7rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 80%;
+  max-width: 300px;
+  transition: .2s;
+}
+
+.email-button:hover {
+  background: #6fd472;
+}
+
 .settings-btn:hover { background: #6fd472; }
 .settings-btn.delete { background: #b84c4c; color: #fff; }
 .settings-btn.delete:hover { background: #d35b5b; }
@@ -90,3 +108,4 @@ body {
 }
 .nav-item { color: #8fb88a; text-align: center; font-size: .9rem; }
 .nav-item.active { color: #5fa861; font-weight: 600; }
+
