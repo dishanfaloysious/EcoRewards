@@ -31,9 +31,13 @@ const demoUser = {
   joinedYears: 4
 };
 
+document.getElementById("emailBtn").addEventListener("click", () => {
+    window.location.href = "ecorewardsgla@gmail.com";
+});
 // When the page loads fill in the example data
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("username").textContent = demoUser.username;
   document.getElementById("email").textContent = demoUser.email;
   document.getElementById("joinedYears").textContent = demoUser.joinedYears;
 });
+
