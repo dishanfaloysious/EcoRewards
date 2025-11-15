@@ -4,16 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EcoRewards — Rewards</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rewards.css">
 </head>
 
 <body>
 
-<!-- Header -->
-    <header class="header">
-     <div class="title">EcoRewards <span class="leaf">🍃</span></div>
-     <div class="icon">👤</div>
-    </header>
+<!-- Status bar  -->
+<div class="statusbar">
+    <span class="sb-time">11:00pm</span>
+    <span class="sb-signal">📶</span>
+</div>
+
+<!-- Brand row  -->
+<header class="brandbar">
+    <div class="brand">
+        <span class="logo-text">EcoRewards</span>
+        <img src="logo.png" alt="EcoRewards Logo" class="logo-img">
+    </div>
+    <a class="profile-btn" href="../Profile/profile.html" title="Profile">👤</a>
+</header>
 
 <!--rewards-->
     <main class="rewardsContent">
@@ -33,13 +42,22 @@
     </section>
 </main>
 
-<!-- Footer -->
+<!-- Bottom navigation -->
 <footer class="footer">
-    <div class="nav-item active">⭐<br><span>Rewards</span></div>
-    <div class="nav-item">🏠<br><span>Home</span></div>
-    <div class="nav-item">📊<br><span>Leaderboard</span></div>
+    <a class="nav-item" href="../rewards/rewards.html">
+        <div class="nav-ico">⭐</div>
+        <div class="nav-txt">Rewards</div>
+    </a>
+    <a class="nav-item active" href="../homepage/homepage.html">
+        <div class="nav-ico">🏠</div>
+        <div class="nav-txt">Home</div>
+    </a>
+    <a class="nav-item" href="../leaderboard/leaderboard.html">
+        <div class="nav-ico">📊</div>
+        <div class="nav-txt">Leaderboard</div>
+    </a>
 </footer>
 
-<script src="script.js"></script>
+<script src="rewards.js"></script>
     </body>
 </html>
